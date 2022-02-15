@@ -79,7 +79,29 @@ void loop()
 	delay(500);
 }
 ## EX4
-(link of image)
+#include <ESP8266WiFi.h>
+
+int cnt = 0;
+
+void setup()
+{
+	Serial.begin(115200);
+	pinMode(0, INPUT);
+	pinMode(2, OUTPUT);
+	Serial.printIn("\n\n\n");
+}
+
+void loop()
+{
+	int val = digitalRead(0);
+	Serial.printf("======= read %d\n", val);
+	if(val==1) {
+		digitalWrite(2, LOW);
+	} else {
+	    digitalWrite(2, LOW);
+	}
+	delay(100);
+}
 ## EX5
 #include <ESP8266WiFi.h>
 //#include <WiFiClient.h>
@@ -138,3 +160,43 @@ void loop(void){
   server.handleClient();
 }
 ## EX6
+#include <ESP8266WiFi.h>
+//#include <WiFiClient.h>
+#include <ESP8266WebServer.h>
+
+const char* ssid = "MY-ESP8266";
+const char* password = "choompol";
+
+IPAddress local_ip(192, 168, 1, 1);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 255, 0);
+
+ESP8266WebServer server(80);
+
+int cnt = 0;
+
+void setup(void){
+	Serial.begin(115200);
+
+	WiFi.softAP(ssid, password);
+	WiFi.softAPConfig(local_ip, gateway, subnet);
+	delay(100);
+
+	server.onNotFound([]() {
+		server.send(404, "text/plain", "Path Not Found");
+	});
+
+	server.on("/", []() {
+		cnt++;
+		String msg = "Hello cnt: ";
+		msg += cnt;
+		server.send(200, "text/plain", msg);
+	});
+
+	server.begin();
+	Serial.println("HTTP server started");
+}
+
+void loop(void){
+  server.handleClient();
+}
