@@ -21,15 +21,32 @@
 
 ### 1.ภาษา c กับ Risc-V rv64gc Clang 14.0.0
 ภาษาระดับสูง - ภาษาแอสแซมบี้
+![2022-04-07](https://user-images.githubusercontent.com/98943950/162044844-dcb42c55-ebc3-450c-b1fc-d5f11ad3aef8.png)
 
 ภาษาระดับสูง - ภาษาเครื่อง
+![2022-04-07 (1)](https://user-images.githubusercontent.com/98943950/162045013-5811d9cf-665b-4ac0-af58-7d6dd0813f41.png)
 
 ### 2.ภาษา c++ กับ Risc-V rv64gc Clang 14.0.0
 ภาษาระดับสูง - ภาษาแอสแซมบี้
+![2022-04-07 (2)](https://user-images.githubusercontent.com/98943950/162045095-c68829b8-6f03-48b6-a42b-fc1193c8c5b7.png)
 
 ภาษาระดับสูง - ภาษาเครื่อง
+![2022-04-07 (3)](https://user-images.githubusercontent.com/98943950/162045112-fa540347-14a9-468a-920a-03f34c815a5c.png)
 
-### 3.ภาษา c กับ Risc-V rv64gc Clang 14.0.0
+### 3.ภาษา c กับ x86-94 gcc6.1
 ภาษาระดับสูง - ภาษาแอสแซมบี้
+![2022-04-07 (4)](https://user-images.githubusercontent.com/98943950/162045134-80d355ba-c3ca-42c1-a85d-375bf0445e30.png)
 
 ภาษาระดับสูง - ภาษาเครื่อง
+![2022-04-07 (5)](https://user-images.githubusercontent.com/98943950/162045148-5c425942-bebf-4129-b0f2-22649b864dfd.png)
+
+
+### 4.ภาษา c++ กับ ARM64 gcc7.5
+ภาษาระดับสูง - ภาษาแอสแซมบี้
+![2022-04-07 (6)](https://user-images.githubusercontent.com/98943950/162045596-14d3dc91-9cd6-43c9-aacd-2f34a788a061.png)
+
+ภาษาระดับสูง - ภาษาเครื่อง
+![2022-04-07 (7)](https://user-images.githubusercontent.com/98943950/162045607-77e21726-c176-4df6-8810-006b3ae4e8ca.png)
+
+
+
